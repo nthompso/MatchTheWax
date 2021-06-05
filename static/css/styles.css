@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+body, html {
+  height: 100%;
+  background-image: url("../img/bgnd-5.png");
+  background-repeat: repeat;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LEFTOVERS FOR VISUALIZER */
+.anim {
+  position: absolute;
+  z-index: 1;
+}

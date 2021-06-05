@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<!--#########################-->
+		<!--   META DATA META DATA   -->
+		<!--#########################-->
+		<meta charset="utf-8">
+		<title>Music Visualizer</title>
+		<meta name="description" content="Music Visualizer">
+		<meta name="author" content="Nate Thompson">
+		<title>{% block title %}{% endblock %} - Match The Wax</title>
+
+		<!--#########################-->
+		<!--   CSS CSS CSS CSS CSS   -->
+		<!--#########################-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+	</head>
+	<body>
+		<ul id="slide-out" class="sidenav">
+		    <li><div class="user-view">
+		      <div class="background">
+		        <img src="images/office.jpg">
+		      </div>
+		      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+		      <a href="#name"><span class="white-text name">John Doe</span></a>
+		      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+		    </div></li>
+		    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+		    <li><a href="#!">Second Link</a></li>
+		    <li><div class="divider"></div></li>
+		    <li><a class="subheader">Subheader</a></li>
+		    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		  </ul>
+		  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+
+		
+	    <h2 id='song'>None</h2>
+
+		<!--#########################-->
+		<!-- SCRIPTS SCRIPTS SCRIPTS -->
+		<!--#########################-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+	</body>
+
+</html>
